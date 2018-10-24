@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">Container</a>
+    <a class="navbar-brand" href="#">McGyverTronics</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#snakenav" aria-controls="snakenav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,13 +9,13 @@
     <div class="collapse navbar-collapse" id="snakenav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="">Home {{a}} <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="">Página Inicial<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="equipe">Equipe</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="projetos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <a class="nav-link dropdown-toggle" id="projetos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projetos</a>
           <div class="dropdown-menu" aria-labelledby="projetos">
             <a class="dropdown-item" routerLink="snakerobot">SnakeRobot</a>
             <a class="dropdown-item" routerLink="maorobotica">Mão Robótica</a>
@@ -23,15 +23,12 @@
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-md-0">
-        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-      </form>
     </div>
   </div>
 </nav>
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Bem Vindo à {{ title }}!
   </h1>
 </div>
 <router-outlet></router-outlet>
