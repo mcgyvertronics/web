@@ -1,5 +1,181 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MÃO ROBÓTICA</b></h1>
+  <p>Bem vindo a mais um projeto <span class="w3-tag">McGyverTronics</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="assets/snakerobot/mao1.jpeg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>SNAKE ROBOT</b></h3>
+      <h5>Pesquisa e Desenvolvimento de um robô cobra, <span class="w3-opacity">Outubro 23, 2018</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Como soteropolitanos que somos, convivemos nos períodos de chuva em Salvador com as notícias de deslizamentos e desmoronamentos, onde os bombeiros realizam resgates com toda técnica possível e tentando encontrar o maior número de sobreviventes possível. Outra situação é com relação a inspeção de dutos, minas e até áreas com radiação, onde se evitar a presença do homem em loco seria altamente desejável. 
+Pensando nisso, tivemos a idéia de iniciar a pesquisa e desenvolvimento do nosso Snake Robot.  Ele é um robô em formato de cobra destinado a ajudar no resgate de vítimas em desmoronamentos, ou inspeção em locais de difícil acesso, captando, transmitindo dados, coordenadas e sendo controlado remotamente por conexão Wifi. 
+Para tal iniciamos o processo de pesquisa e desenvolvimento utilizando componentes eletrônicos, dispositivos de conexão wifi, arduino, Atmega328P, Servomotores, etc..</p>
+
+<div class="w3-container">
+      <h5><b>PROTOTIPAÇÃO</b></h5>
+    </div>
 <p>
-  maorobotica works!
-  <br>
-  {{descricao}}
-</p>
+
+A construção de um modelo efetivo ainda é uma dificuldade presente. No que se refere a uso de materiais inicialmente foi utilizado o vinil para construção de uma estrutura que seria parafusada nos servos. O vinil é um material de fácil manipulação quando exposto ao calor e apresenta um ótimo acabamento, no entanto,  apresenta pouca flexibilidade e pode ser partido facilmente quando sofre pressão. Devido a esse problema de fragilidade a pressões manuais não foi finalizado nem o equivalente a uma falange.
+ </p><p><img src="assets/snakerobot/IMG-20180419-WA0011.jpg" alt="Nature" style="width:40%" ></p>
+ <p><img src="assets/snakerobot/IMG_20180419_100438.jpg" alt="Nature" style="width:40%" ></p>
+<p>Tentamos também o alumínio, mas a estrutura não ficou a contento, ficando sem equilíbrio e perdendo a mobilidade no atrito entre as partes móveis e fixas de alumínio, conforme figura acima. Sendo assim, parte móvel da falange foi construída utilizando um cilindro de pvc de 5,2 cm de altura onde foi traçada uma linha horizontal na parte superior na altura de 1,2 cm a partir da extremidade superior e feito um retângulo verticalmente a essa linha de forma centralizada na largura de 1,2 x 5,2 cm, conforme imagem abaixo.
+</p><p><img src="assets/snakerobot/prot1.jpg" alt="Nature" style="width:40%" ></p>
+<p>Após a conclusão das seis falanges o passo seguinte foi a montagem e integração da parte eletrônica inserindo os servos e o microcontrolador. O programa que irá automatizar os movimentos está atualmente em desenvolvimento e já apresenta resultados. O desenvolvimento do protótipo se mostrou extremamente importante pois através dele foi 
+possível o construir diversos modelos mecânicos e definir qual o mais apto para o projeto do robô cobra.
+</p><p><img src="assets/snakerobot/ultimoprot.jpeg" alt="Nature" style="width:40%" ></p>  
+ <div class="w3-container">
+      <h5><b>O CIRCUITO</b></h5>
+    </div>  
+<p>
+
+O circuito utilizado no Snake Robot até o momento pode ser considerado relativamente simples, pois utiliza resistores, jumpers, um módulo Wifi do tipo ESP-8266, um Arduino UNO (Para realizar a interface com o computador durante a programação), e o microcontrolador ATMega328P, já presente no Arduino. Utilizamos também um shield para Servomotores, pois facilita a ligação dos 9 servos utilizados no projeto.O esquema básico de ligação é mostrado abaixo.</p><p><img src="assets/snakerobot/Circuito.jpg" alt="Nature" style="width:60%" ></p>	
+
+<div class="w3-container">
+      <h5><b>ALGORÍTIMO</b></h5>
+    </div>      
+	<p>
+
+No snake robot a locomoção deve imitar a movimentação de uma cobra real, adotando dessa forma os quatro métodos de locomoção ou alguns deles, para a partir daí explorar outras opções de movimentação, possibilitadas pela estrutura e configuração do snake robot.</p>
+<p><video width="320" height="240" controls="controls">
+<source src="assets/snakerobot/video1.mp4" type="video/mp4">
+<object data="" width="320" height="240">
+<embed width="320" height="240" src="assets/snakerobot/Yes Bank Advertisment.mp4">
+</object>
+</video></p>
+<p> O movimento de ondulação lateral e concertina, muito utilizado por serpentes foi nossa referência ao programarmos os movimentos. Para imitar os movimentos fizemos os servos girarem as falanges da snake em ângulos ajustados empiricamente, que fizeram com que o movimento ficasse fluido e próximo ao de uma serpente real. Com relação a comunicação, fazemos todo o sistema de controle via WIFI com o ESP8266. Segue abaixo pequenos trechos do código utilizado.</p>
+<p><video width="320" height="240" controls="controls">
+<source src="assets/snakerobot/video2.mp4" type="video/mp4">
+<object data="" width="320" height="240">
+<embed width="320" height="240" src="assets/snakerobot/Yes Bank Advertisment.mp4">
+</object>
+</video></p>
+<p><video width="320" height="240" controls="controls">
+<source src="assets/snakerobot/video3.mp4" type="video/mp4">
+<object data="" width="320" height="240">
+<embed width="320" height="240" src="assets/snakerobot/Yes Bank Advertisment.mp4">
+</object>
+</video></p>
+<p><img src="assets/snakerobot/algparte1.jpg" alt="Nature" style="width:60%" ></p>	
+<p><img src="assets/snakerobot/algparte2.jpg" alt="Nature" style="width:30%" ></p>	
+<p><img src="assets/snakerobot/algparte3.jpg" alt="Nature" style="width:30%" ></p>	
+
+
+	  <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container">
+      <h3><b></b></h3>
+      <h5><span class="w3-opacity"></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b></b> <span class="w3-badge"></span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="assets/snakerobot/mcgyver.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>McGyverTronics</b></h4>
+      <p>Equipe de Robótica e Desenvolvimento em IOT</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="assets/snakerobot/cobra1.jpg" alt="Image" class="w3-left w3-margin-right" style="width:20px">
+        <span class="w3-large">SnakeRobot</span><br>
+        </li>
+      <li class="w3-padding-16">
+        <img src="assets/snakerobot/mao1.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:20px">
+        <span class="w3-large">Mão Robótica</span><br>
+       </li> 
+      <li class="w3-padding-16">
+        <img src="assets/snakerobot/roboinsp1.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:20px">
+        <span class="w3-large">Robô de Inspeção</span><br>
+       </li>   
+     </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Robótica</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">SnakeRobot</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cultura_Maker</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">McGyverTronics</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Brazil</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://mcgyvertronics.github.io/web/" target="_blank">McGyverTronics</a></p>
+</footer>
+
+</body>
