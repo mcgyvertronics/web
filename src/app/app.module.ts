@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { SnakeRobotComponent } from "./snakerobot/snakerobot.component";
+import { SnakeRobotComponent } from "./projects/snakerobot/snakerobot.component";
 import { MaoRoboticaComponent } from './maorobotica/maorobotica.component';
 import { RoboInspecaoComponent } from './roboinspecao/roboinspecao.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EquipeComponent } from './equipe/equipe.component';
+import { ProjectsComponent } from './projects/projects/projects.component';
+import { ProjectsRoutingModule } from './projects/projects-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { EquipeComponent } from './equipe/equipe.component';
     MaoRoboticaComponent,
     RoboInspecaoComponent,
     EquipeComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectsRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
