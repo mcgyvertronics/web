@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SnakeRobotComponent } from '../projects/snakerobot/snakerobot.component';
-import { MaoRoboticaComponent } from '../maorobotica/maorobotica.component';
-import { RoboInspecaoComponent } from '../roboinspecao/roboinspecao.component';
+import { MaoRoboticaComponent } from '../projects/maorobotica/maorobotica.component';
+import { RoboInspecaoComponent } from '../projects/roboinspecao/roboinspecao.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [

@@ -1,0 +1,134 @@
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>MÃO ROBÓTICA</b></h1>
+  <p>Bem vindo a mais um projeto <span class="w3-tag">McGyverTronics</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+  <!-- Blog entries -->
+  <div class="w3-col l8 s12">
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <img src="assets/projects/mao1.jpg" alt="Nature" style="width:100%">
+      <div class="w3-container">
+        <h3><b>MÃO ROBÓTICA</b></h3>
+        <h5>Pesquisa e Desenvolvimento de uma Mão Robótica, <span class="w3-opacity">Outubro 23, 2018</span></h5>
+      </div>
+
+      <div class="w3-container">
+        <p>No dia-a-dia, convimemos com a diversidade e com muitas pessoas com dificuldades de locomoção, e(ou) com
+          alguma deficiência. Baseado nessa premissa, pensamos em como incluir essas pessoas, possibilitando uma maior
+          acessibilidade. Nosso ponta a pé inicial é a pesquisa e desenvolvimento de uma mão robótica humanóide, com
+          funcionalidades similares a um membro real, para quue a própria pessoa possa controlar o seu membro
+          robóticco.
+          Para tal, estamos pesquisando conhecimentos das áreas de robótica, eletrônica, eletromiografia, neurologia e
+          fisiologia de uma mão humana.Nesse primeiro protótipo só temos o controle dos quatro dedos e de um polegar
+          opositor, e o movimento sendo controlado por um simples sensor de toque. Ao fim do desenvolvimento do
+          projeto, espera-se que o próprio usuário possa controlar com seus impulsos elétricos gerados pelos seu
+          cérebro e captados em seu nervo residual.</p>
+
+        <div class="w3-container">
+          <h5><b>PROTOTIPAÇÃO</b></h5>
+        </div>
+        <p>
+
+          Tivemos bastante dificuldade em modelar a mão robótica e todas suas funcionalidades, principalmente com
+          relação a fluidez do movimento para não sobrecarregar os servomotores. Quanto ao uso de materiais, tentamos
+          modelar todo em PVC, baseado na experiência adquirida com o SnakeRobot, porém foi-se necessário utilizarmos a
+          palma da mão com uma base metálica, para ter maior fixação, base essa retirada de um CD-ROM Drive. Os dedos
+          foram todos modelados em PVC, baseado no brinquedo mão robótica da estrela. Abaixo seguem imagens da
+          construção desse protótipo e do modelo que nos baseamos.
+        </p>
+        <p><img src="assets/maorobotica/prototipacao1.jpeg" alt="Nature" style="width:40%"></p>
+        <p><img src="assets/maorobotica/prototipacao2.jpeg" alt="Nature" style="width:40%"></p>
+        <p><img src="assets/maorobotica/prototipacao3.jpeg" alt="Nature" style="width:40%"></p>
+
+        <div class="w3-container">
+          <h5><b>O CIRCUITO</b></h5>
+        </div>
+        <p>
+
+          O circuito utilizado na mão robótica até o momento é bem simples, pois não estamos ainda utilizando
+          eletromiografia. A idéia no momento é utilizar um sensor mecânico com um botão que ao ser pressionado
+          movimenta a mão fazendo-a fechar e abrir. Com relação ao drive para movimentar os servomotores, estamos
+          utilizando a interface do próprio arduino com um shield para servomotor. Segue abaixo um descritivo do
+          circuito.
+        </p>
+        <p><img src="assets/maorobotica/circuitomao1.jpeg" alt="Nature" style="width:40%"></p>
+        <p><img src="assets/maorobotica/circuitomao2.jpeg" alt="Nature" style="width:40%"></p>
+
+        <div class="w3-container">
+          <h5><b>ALGORÍTIMO</b></h5>
+        </div>
+        <p>
+
+          O algorítimo da mão também está relativamente simples, tendo em vista que estamos na fase inicial de P&D.
+          Para tal temos apenas que pegar o sinal do botão quando o mesmo é pressionado, e a partir desse evento fazer
+          a mão abrir e fechar. As variáveis são simples e não tem nenhuma característica de dificil compreensão para
+          quem estiver começando e quiser construir sua própria mão. Segue abaixo o código da mão robótica.</p>
+        <p><video width="320" height="240" controls="controls">
+            <source src="assets/maorobotica/video1.mp4" type="video/mp4">
+            <object data="" width="320" height="240">
+              <embed width="320" height="240" src="assets/snakerobot/Yes Bank Advertisment.mp4">
+            </object>
+          </video></p>
+        <p><img src="assets/maorobotica/codigomao1.jpg" alt="Nature" style="width:50%"></p>
+        <p><img src="assets/maorobotica/codigomao2.jpg" alt="Nature" style="width:50%"></p>
+
+
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b></b></h3>
+        <h5><span class="w3-opacity"></span></h5>
+      </div>
+
+      <div class="w3-container">
+        <p></p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p></p>
+          </div>
+          <div class="w3-col m4 w3-hide-small">
+            <p><span class="w3-padding-large w3-right"><b></b> <span class="w3-badge"></span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END BLOG ENTRIES -->
+  </div>
+
+  <!-- Introduction menu -->
+  <div class="w3-col l4">
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+      <img src="assets/maorobotica/mcgyver.jpg" style="width:100%">
+      <div class="w3-container w3-white">
+        <h4><b>McGyverTronics</b></h4>
+        <p>Equipe de Robótica e Desenvolvimento em IOT</p>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Posts -->
+    <app-posts></app-posts>
+
+    <!-- END Introduction Menu -->
+  </div>
+
+  <!-- END GRID -->
+</div><br>
